@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        .create-button{
+        background-color:rgb(201,0,0);
+        color:white;
+        border:none;
+        height:40px;
+        width: 105px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 9px;
+    }
+    .Login-button{
+        background-color:green;
+        color:white;
+        border:none;
+        height:40px;
+        width: 105px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 9px;
+    }
+    }
+</style>
+<body>
+    <center><h1>Welcome to simple Notes</h1>
+   <a href="{{url_for('create')}}"><button class="create-button">Create</button></a><br><br>
+    <a href="{{url_for('login')}}"><button class="Login-button">Login</button></a></center>
+</body>
+</html>
